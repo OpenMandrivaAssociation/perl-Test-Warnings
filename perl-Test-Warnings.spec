@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    1
 Summary:    Test for warnings and the lack of them
 License:    GPL+ or Artistic
 Group:      Development/Perl
@@ -18,11 +18,6 @@ BuildRequires: perl(Test::Builder)
 BuildRequires: perl(Test::Deep)
 BuildRequires: perl(Test::More) >= 0.940.0
 BuildRequires: perl(Test::Tester) >= 0.108.0
-BuildRequires: perl(if)
-BuildRequires: perl(parent)
-BuildRequires: perl(strict)
-BuildRequires: perl(version)
-BuildRequires: perl(warnings)
 BuildArch:  noarch
 
 %description
