@@ -10,6 +10,7 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl-devel
 BuildRequires: perl(Exporter)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Spec::Functions)
