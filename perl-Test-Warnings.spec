@@ -14,8 +14,13 @@ Url:        http://metacpan.org/pod/Test::Warnings
 Source0:    http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl-devel
+BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
+BuildRequires: perl(parent)
+BuildRequires: perl(strict)
+BuildRequires: perl(warnings)
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Spec::Functions)
 BuildRequires: perl(List::Util)
 BuildRequires: perl(Test::Builder)
