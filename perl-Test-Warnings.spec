@@ -1,12 +1,12 @@
 %define upstream_name Test-Warnings
-%define upstream_version 0.026
+%define upstream_version 0.030
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Release:    1
 Summary:    Test for warnings and the lack of them
 License:    GPL+ or Artistic
 Group:      Development/Perl
@@ -52,6 +52,6 @@ Work.
 %makeinstall_std
 
 %files
-%doc CONTRIBUTING Changes INSTALL META.json META.yml MYMETA.yml README examples
+%doc CONTRIBUTING Changes INSTALL META.json META.yml README examples
 %perl_vendorlib/*
 %{_mandir}/man3/*
