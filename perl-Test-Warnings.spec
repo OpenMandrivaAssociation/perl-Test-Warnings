@@ -1,5 +1,5 @@
 %define upstream_name Test-Warnings
-%define upstream_version 0.030
+%define upstream_version 0.031
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
