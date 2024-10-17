@@ -10,7 +10,7 @@ Release:    2
 Summary:    Test for warnings and the lack of them
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://metacpan.org/pod/Test::Warnings
+Url:        https://metacpan.org/pod/Test::Warnings
 Source0:    http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl-devel
