@@ -13,6 +13,7 @@ Group:      Development/Perl
 Url:        https://metacpan.org/pod/Test::Warnings
 Source0:    http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl-devel
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
