@@ -1,19 +1,19 @@
 %define upstream_name Test-Warnings
-%define upstream_version 0.031
+%define upstream_version 0.038
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 Summary:    Test for warnings and the lack of them
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://metacpan.org/pod/Test::Warnings
-Source0:    http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/Test-Warnings
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	make
+BuildRequires: make
 BuildRequires: perl-devel
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
@@ -26,8 +26,8 @@ BuildRequires: perl(File::Spec::Functions)
 BuildRequires: perl(List::Util)
 BuildRequires: perl(Test::Builder)
 BuildRequires: perl(Test::Deep)
-BuildRequires: perl(Test::More) >= 0.940.0
-BuildRequires: perl(Test::Tester) >= 0.108.0
+BuildRequires: perl(Test::More) >= 0.94
+BuildRequires: perl(Test::Tester) >= 0.108
 BuildArch:  noarch
 
 %description
