@@ -1,17 +1,16 @@
 %define upstream_name Test-Warnings
-%define upstream_version 0.038
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
 
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.038
+Release:    2
 Summary:    Test for warnings and the lack of them
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/Test-Warnings
-Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires: make
 BuildRequires: perl-devel
@@ -39,7 +38,7 @@ block. You can declare a plan, or not, and things will still Just
 Work.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
